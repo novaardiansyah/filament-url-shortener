@@ -20,6 +20,13 @@ class User extends Authenticatable implements FilamentUser, MustVerifyEmail
     return true;
   }
 
+  protected static function booted(): void
+  {
+    static::created(function (User $user) {
+      $user->assignRole('User');
+    });
+  }
+
   /**
    * The attributes that are mass assignable.
    *
