@@ -1,66 +1,57 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Filament URL Shortener
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Hi Future Developer,
 
-## About Laravel
+Welcome to my latest project! This time, I’m working on a web-based application focused on creating short URLs. I’m using the latest technologies, like Laravel 11 and Filament 3, which I’ve been working with quite a bit recently.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+The main goal of this app is to make it easy for users to create short URLs for sharing information or links that are shorter and easier to remember. Additionally, the app tracks and stores stats on how many times each URL is visited.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+This project is open-source, so anyone who needs it can use it. I’ve also provided complete documentation on how to use the app. There’s still plenty of room for improvement, so if you have any constructive feedback or suggestions, I’d really appreciate it.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## How the Application Works
 
-## Learning Laravel
+In this app, I’m using an Open API from [api.tinyurl.com](https://api.tinyurl.com/) to create short URLs, but I’ve added an additional layer in between to track URL activity stats directly within my app. The mechanism works by converting the original URL into a Referrer URL (which is the URL of my app) before using the API to shorten it.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+The purpose of this additional layer is to make the URLs user-based, so even if the original URL is the same, converting it into different Referrer URLs results in unique short URLs. This way, I can gather separate activity stats for each URL.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+I’m also planning to add a private URL feature, where a generated URL can be locked and accessed only by the user who created it. This is one of the main reasons I’m implementing the Referrer URL layer.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Electrifying Tech Stack!⚡
 
-## Laravel Sponsors
+This project is fueled by an electrifying lineup of cutting-edge technologies:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- [Laravel 11](https://laravel.com/docs/11.x)
+- [Filament 3](https://filamentphp.com/docs/3.x)
+- [Spatie Roles & Permissions](https://filamentphp.com/plugins/tharinda-rodrigo-spatie-roles-permissions)
 
-### Premium Partners
+Prepare for an exhilarating ride through innovation and efficiency with this impressive tech stack!
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## Licensing Groove🕺
 
-## Contributing
+Exciting news! This project is grooving to the rhythm of the [MIT License](https://github.com/novaardiansyah/filament-url-shortener/blob/main/LICENSE)! 🎉
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Let's Connect! 📞
 
-## Code of Conduct
+Need to chat? Feel free to drop me a line via [Email](mailto:novaardiansyah78@gmail.com) or hit me up on [WhatsApp](https://wa.me/6289506668480?text=Hi%20Nova,%20I%20have%20a%20question%20about%20your%20project%20on%20GitHub:%20https://github.com/novaardiansyah/filament-url-shortener). I'm just a message away, ready to groove with you! 📩
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Sneak Peek 🌟
 
-## Security Vulnerabilities
+Get a glimpse of the app's enchanting world by exploring the current progress at [live demo](https://short-url.tple008.my.id/). Feast your eyes on these snapshots that showcase the app's dynamic essence:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+<div style="margin-bottom: 5px">
+  <img src="public/capture/image-1.jpg" alt="image-1" style="width: 300px; margin-right: 10px" />
+  <img src="public/capture/image-2.jpg" alt="image-2" style="width: 300px;" />
+</div>
 
-## License
+<div style="margin-bottom: 5px">
+  <img src="public/capture/image-3.jpg" alt="image-5" style="width: 300px; margin-right: 10px" />
+  <img src="public/capture/image-4.jpg" alt="image-3" style="width: 300px; margin-right: 10px" />
+</div>
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Project Status 🚀 
+
+![stages](https://img.shields.io/badge/stages-production-informational)
+[![information](https://img.shields.io/badge/information-references-informational)](https://github.com/novaardiansyah/filament-url-shortener/blob/main/references.json)
+![size](https://img.shields.io/github/repo-size/novaardiansyah/filament-url-shortener?label=size&color=informational)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/novaardiansyah/filament-url-shortener/blob/main/LICENSE)
+[![last commit](https://img.shields.io/github/last-commit/novaardiansyah/filament-url-shortener?label=last%20commit&color=informational)](https://github.com/novaardiansyah/filament-url-shortener/commits/main)
