@@ -73,7 +73,7 @@ class UrlResource extends Resource
           ->sortable()
           ->label('Original URL')
           ->toggleable(isToggledHiddenByDefault: true)
-          ->url(fn (string $state): string => $state, true),
+          ->copyable(),
         Tables\Columns\TextColumn::make('shortener_url')
           ->searchable()
           ->sortable()
